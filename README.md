@@ -11,6 +11,8 @@ The project is a small web application used for hospital administration. The app
 
 **Out of scope functionalities**: billing, insurance, patient portal, public deployment.
 
+**Project board**: https://github.com/users/ivargek23/projects/1
+
 ### Important decisions not covered by given scenario before starting the requirements analysis
 
 | # | Decision | Explanation |
