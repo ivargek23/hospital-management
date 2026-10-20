@@ -708,3 +708,25 @@ Story points are a relative measure of size, not hours. They account for the amo
 | Monitoring | Micrometer, Prometheus, Grafana | Spring Boot exposes metrics natively; Prometheus collects them and Grafana displays the dashboard. |
 | Logging | Spring Boot structured logging (JSON) | Built in; logs can be parsed by monitoring tools without extra libraries (NFR-13). |
 | Diagrams | draw.io (`.drawio` files in `docs/`) | XML source that Git can version and diff. |
+
+## 10. Branching and commit conventions
+
+### Branch names
+
+`<issue_number>-<item-id>-<short-description>`, lowercase, words separated by hyphens.
+
+| Example | Issue |
+|---|---|
+| `37-t-pl01-1-spring-boot-skeleton` | #37 T-PL01.1 |
+| `39-us-18-logout` | #39 US-18 |
+
+**Rules**:
+- One branch per Task, or per small User Story without sub-tasks.
+- Always created from an up-to-date `main`, preferably from the issue (**Development → Create a branch**), so the branch is linked to the issue.
+- The issue number comes first, so automation can read it from the branch name.
+- Nobody commits directly to `main`. Changes reach it only through a pull request with `Closes #<issue-number>` in the description.
+
+### Commit messages
+- Imperative mood, one logical change per commit: `Add patient entity and migration (#73)`.
+- Every commit references its issue number, so it appears on the issue timeline.
+
