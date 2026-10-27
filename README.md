@@ -513,7 +513,7 @@ Test task notation: `[TEST][auto]` is an automated code test run in CI; `[TEST][
 #### PL-01 app-skeleton
 | ID | Task | Kind | Blocked by |
 |---|---|---|---|
-| T-PL01.1 | Generate the Spring Boot project (Java 21, Gradle, Web, Security, JPA, Thymeleaf, Flyway, Actuator) | Code | – |
+| T-PL01.1 | Generate the Spring Boot project (Java 25, Maven, Web, Security, JPA, Thymeleaf, Flyway, Actuator) | Code | – |
 | T-PL01.2 | `docker-compose.yml` with PostgreSQL for local development | Code | T-PL01.1 |
 | T-PL01.3 | Database configuration and Flyway baseline migration | Code | T-PL01.2 |
 | T-PL01.4 | Actuator health endpoint and structured JSON logging | Code | T-PL01.1 |
@@ -523,7 +523,7 @@ Test task notation: `[TEST][auto]` is an automated code test run in CI; `[TEST][
 | ID | Task | Kind | Blocked by |
 |---|---|---|---|
 | T-PL02.1 | GitHub Actions workflow: build and run tests on push and pull request | Pipeline | PL-01 |
-| T-PL02.2 | Gradle dependency caching in the workflow | Pipeline | T-PL02.1 |
+| T-PL02.2 | Maven dependency caching in the workflow | Pipeline | T-PL02.1 |
 | T-PL02.3 | JaCoCo coverage report and 80% quality gate (NFR-09) | Pipeline | T-PL02.1 |
 | T-PL02.4 | Branch protection on `main`: pull request and passing CI required | Config | T-PL02.1 |
 | T-PL02.5 | [TEST][manual] Open a pull request with a failing test and verify merge is blocked | Test | T-PL02.4 |
@@ -688,15 +688,15 @@ Story points are a relative measure of size, not hours. They account for the amo
 | Language | Java 25 (LTS) | Current long-term support release; the language I know best. |
 | Framework | Spring Boot 4 (Web MVC, Security, Data JPA, Validation, Actuator) | Covers web, security and persistence in one consistent framework with first-class container support. |
 | User interface | Thymeleaf + Bootstrap 5 | Server-rendered pages keep the system as one application, one image and one pipeline. |
-| Build tool | Gradle (Kotlin DSL) | Fast incremental builds and caching in CI; type-safe build scripts. |
+| Build tool | Maven (wrapper included) | Declarative, predictable builds; the standard for Spring Boot projects. |
 | Database | PostgreSQL | Official container image; partial unique indexes enforce the double-booking rule (FR-18). |
 | Database migrations | Flyway | Versioned schema changes stored in the repository and applied automatically on startup. |
-| Unit testing | JUnit 5, Mockito, AssertJ | Standard Java testing tools, run headless by Gradle in CI. |
+| Unit testing | JUnit 5, Mockito, AssertJ | Standard Java testing tools, run headless by Maven in CI. |
 | Integration testing | Spring Boot Test (MockMvc), Testcontainers | Tests run against a real PostgreSQL instead of an in-memory substitute. |
 | End-to-end testing | Playwright for Java | Same language as the application; runs headless in GitHub Actions. |
 | Coverage | JaCoCo | Coverage report and quality gate in CI (NFR-09). |
 | Code quality | Spotless (google-java-format), SpotBugs | Formatting and static analysis enforced before merge (NFR-10). |
-| Load testing | Gatling (Java DSL) | Performance tests written in Java and run from Gradle (NFR-08). |
+| Load testing | Gatling (Java DSL) | Performance tests written in Java and run from Maven (NFR-08). |
 | Containerization | Docker (multi-stage build, Eclipse Temurin JRE base), Docker Compose | Small runtime image running as non-root; whole system starts with one command (NFR-12). |
 | CI/CD | GitHub Actions | Integrated with Issues, Projects and pull requests, as required by the project. |
 | Artifact registry | GitHub Container Registry (GHCR) | Required by the project; images linked to the repository. |

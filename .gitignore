@@ -1,7 +1,6 @@
-# Gradle
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
 
 # IntelliJ IDEA
 .idea/
