@@ -1,4 +1,4 @@
-# Hospital management - DevOps project
+# Hospital Management – DevOps pipeline project
 
 **Author**: Ivona Vargek
 **Course**: Applied DevOps, Algebra Bernays University
