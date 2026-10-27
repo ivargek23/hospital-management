@@ -11,8 +11,3 @@ Branches follow `<issue-number>-<item-id>-<short-description>`.
 - Unstage but keep changes: `git restore --staged <file>`.
 - Fix the last commit before pushing: `git commit --amend`.
 - Undo a pushed commit: `git revert <hash>`.
-
-## Undoing changes
-- Unstage but keep changes: `git restore --staged <file>`.
-- Fix the last commit before pushing: `git commit --amend`.
-- Undo a pushed commit: `git revert <hash>`.
