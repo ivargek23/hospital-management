@@ -11,3 +11,6 @@ Branches follow `<issue-number>-<item-id>-<short-description>`.
 - Unstage but keep changes: `git restore --staged <file>`.
 - Fix the last commit before pushing: `git commit --amend`.
 - Undo a pushed commit: `git revert <hash>`.
+
+## Stashing
+- Untracked files are only stashed with `git stash push -u`.
