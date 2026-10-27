@@ -709,6 +709,8 @@ Story points are a relative measure of size, not hours. They account for the amo
 
 Full workflow: [docs/git-workflow.md](docs/git-workflow.md)
 
+Full workflow: [docs/git-workflow.md](docs/git-workflow.md)
+
 ### Branch names
 
 `<issue_number>-<item-id>-<short-description>`, lowercase, words separated by hyphens.
