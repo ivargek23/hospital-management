@@ -403,12 +403,6 @@ A story or task is done when:
 
 ## 5. Process and Ceremonies
 
-The project is divided into seven sprints. The length of each sprint is two weeks. Two week period is long enough to develop a meaningful part of the system, but short enough to allow for timely feedback and adjustments.
-
-### 5.1 Sprint outline
-
-# 5. Process and Ceremonies
-
 The project is divided into seven sprints of two weeks each. Two weeks is long enough to deliver a meaningful vertical slice of the system, and short enough to inspect and adapt seven times before the deadline. The work is done by one person, who acts as Product Owner, Developer and Scrum Master.
 
 ### 5.1 Sprint outline
