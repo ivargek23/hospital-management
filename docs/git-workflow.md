@@ -1,5 +1,11 @@
 # Git workflow
+<<<<<<< HEAD
 How we work with git in this repository.
+||||||| parent of 00df178 (Clarify workflow doc intro (#29))
+How we work with git on this project.
+=======
+How git is used on the hospital-management project.
+>>>>>>> 00df178 (Clarify workflow doc intro (#29))
 
 Branches follow `<issue-number>-<item-id>-<short-description>`.
 
