@@ -1,5 +1,5 @@
 # Git workflow
-How we work with git on this project.
+How we work with git in this repository.
 
 Branches follow `<issue-number>-<item-id>-<short-description>`.
 
