@@ -2,3 +2,7 @@
 How we work with git on this project.
 
 Branches follow `<issue-number>-<item-id>-<short-description>`.
+
+## Commit messages
+- Imperative mood, one logical change per commit: `Add patient entity and migration (#73)`.
+- Every commit references its issue number, so it appears on the issue timeline.
